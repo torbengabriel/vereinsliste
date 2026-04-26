@@ -1,9 +1,9 @@
 :root {
-  --bg: #0d1117;
+  --bg: #F2F1F0;
   --surface: #161b22;
   --surface2: #1c2230;
   --border: #30363d;
-  --accent: #3fb950;
+  --accent: #f95959;
   --accent2: #58a6ff;
   --danger: #f85149;
   --text: #e6edf3;
@@ -43,6 +43,7 @@ html, body, #root {
   font-weight: 800;
   color: var(--accent);
   letter-spacing: -0.02em;
+  text-align: center;
 }
 
 .app-main {
