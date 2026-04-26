@@ -68,7 +68,6 @@ html, body {
   display: flex;
   height: var(--tab-h);
   border-top: 1px solid var(--border);
-  background: var(--surface);
   flex-shrink: 0;
   padding-bottom: env(safe-area-inset-bottom);
 }
