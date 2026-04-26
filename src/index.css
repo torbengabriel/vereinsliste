@@ -35,7 +35,6 @@ html, body {
   flex-direction: column;
   flex: 1;              /* füllt den ganzen #root aus */
   min-height: 0;
-  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
