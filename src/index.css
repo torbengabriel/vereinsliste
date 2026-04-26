@@ -40,6 +40,9 @@ html, body {
 }
 
 .app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 1rem 1.25rem 0.5rem;
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;

@@ -4,6 +4,7 @@ import AttendanceView from './components/AttendanceView.jsx'
 import MembersView from './components/MembersView.jsx'
 import StatsView from './components/StatsView.jsx'
 import ExportView from './components/ExportView.jsx'
+import { IoIosAddCircleOutline } from "react-icons/io";
 
 const TABS = [
   { id: 'attendance', label: 'Anwesenheit', icon: '✓' },
@@ -19,7 +20,9 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <div style={{ width: 28 }} />
         <h1 className="app-title">Meine Vereinsliste</h1>
+        <IoIosAddCircleOutline size={28} color="var(--surface)" />
       </header>
 
       <main className="app-main">
