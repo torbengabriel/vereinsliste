@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PresentButton from './PresentButton/PresentButton'
 
 export default function AttendanceView({ groups, members, attendance, toggleAttendance, setAllAttendance }) {
   const [selectedDate, setSelectedDate] = useState(() => new Date().toISOString().slice(0, 10))
@@ -54,6 +55,15 @@ export default function AttendanceView({ groups, members, attendance, toggleAtte
         <div className="empty-state">
           <span>Keine Mitglieder in dieser Gruppe.</span>
           <small>Gehe zu „Mitglieder" um welche hinzuzufügen.</small>
+
+          {/* <PresentButton
+            active={!!dayAttendance[member.id]}
+            onClick={() => toggleAttendance(selectedDate, member.id)}
+          /> */}
+          <PresentButton
+            active={1==2}
+            onClick={() => console.log}
+          />
         </div>
       ) : (
         <>
