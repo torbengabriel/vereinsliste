@@ -1,10 +1,15 @@
 import { useState } from 'react'
 import './PresentButton.css'
 
-export default function PresentButton({ active, onClick }) {
+type Props = {
+  active: boolean;
+  onClick: () => void;
+};
+
+export default function PresentButton({ active, onClick }: Props) {
   const [animating, setAnimating] = useState(false)
 
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
   if (active || animating) return  // animating auch abfangen
 
   // Ripple
